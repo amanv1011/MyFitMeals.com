@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    background-color: black;
+} */
+
+/* Navigation bar */
+    #navbar{
+        display: flex;
+        align-items: center;
+        position:sticky;
+        top: 0px;
+
+    
+    }
+    #navbar::before{
+        content: "";
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;    
+        z-index: -1;
+        opacity: .3; 
+    }
+    #logo {
+        margin: 0px 24px 0px 21px;
+        
+    }
+
+
+    #logo img{
+        height: 72px;
+        margin: 0px 15px;
+        border-radius: 38px;
+        /* transition-property: all;
+        transition-duration: 7s; */
+        
+        animation: rotation 2s linear infinite;
+          
+        
+    }
+
+    @keyframes rotation {
+        from {
+          transform: rotate(360deg);
+        }
+        to {
+          transform: rotate(0deg);
+        }
+      }
+
+/* 
+    #logo img:hover{
+        transform: rotate(1440deg);
+
+    } */
+
+
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    .items{
+        font-size: 1.3rem;
+    }
+    .items a{
+        display: block;
+        padding: 3px 12px;
+        margin: 5px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: white;
+        font-family: 'Fjalla One', sans-serif;
+
+        /* transition */
+        transition: all;
+        transition-duration: 500ms;
+    }
+    .items a:hover{
+        display: block;
+        padding: 3px 12px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+    }
+        
+    /* home section */
+    #home{
+        display: flex;
+        flex-direction: column;
+        height: 440px;
+        padding: 16px 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    #home::before{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        background: url(../bg2.jpg) no-repeat center center/cover;
+        background-color:black ;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        opacity: .9;
+
+    }
+    #home h1{
+        color: white;
+        text-align: center;
+        font-family: 'Contrail One', cursive;
+        font-size: 2.5rem;
+        
+    }
+    #home p{
+        color: white;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: 'Encode Sans', sans-serif;
+        margin: 5px;
+    }
+    
+    
+    .btn{
+        padding: 15px 22px;
+        border: 2px solid white;
+        border-radius: 26px;
+        color: white;
+        background-color: transparent;
+        font-size: 1rem;
+        margin: 14px;
+        cursor: pointer;
+        
+        /* transition  */
+        transition: all;
+        transition-duration: 500ms;
+    }
+    /* services section */
+    #services{
+        margin: 30px;
+        display: flex;
+    }
+    #services .box{
+        border: 2px solid #d8254d;
+        /* color: white; */
+        padding: 10px 10px;
+        margin: 10px 13px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #fff7f7;
+    }
+
+    #services .box:hover {
+        box-shadow: 0px 0px 10px 1px #d8254d;
+        transform: scaleY(1.05);
+    }
+
+
+    #services .box img{
+        height: 170px;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+
+    }
+
+
+
+    .btn:hover{
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        
+        
+    }
+    .h-primary-center{
+            font-size: 2.6rem;
+        padding: 20px 10px;
+        /* text-align: center; */
+        text-decoration: underline;
+        /* color: white; */
+        margin: 32px 10px 28px 10px;
+        font-family: 'Contrail One', cursive;
+    }
+    .h-secondry{
+        font-size: 2rem;
+        padding: 10px;
+    
+    }
+    
+    .center{
+        text-align: center;
+        font-family: 'Patrick Hand', cursive;
+    }
+    
+    .h-secondry-center{
+        font-family: 'Contrail One', cursive;
+    }
+
+    .h-primary-center2{
+        /* color: white; */
+        text-align: center;
+        font-family: 'Contrail One', cursive;
+    }
+    
+    /* .clint-section{
+        height: 700px;
+    } */
+    
+    .clint-section::before{
+        content: "";
+        position: absolute;
+        background: url(../food1.jpg) center center/cover;
+        height: 56%;
+        width: 100%;
+        z-index: -1;
+        opacity: .8;
+    }
+    #Clints{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 22px;
+        padding: 20px
+        
+    }
+
+    .clint-item{
+        margin: 5px;
+        padding: 10px;
+        
+    }
+
+    .clint-item img{
+        height: 148px;
+        width: 267px;
+        border-radius: 30px;
+    }
+    .contactus{
+        font-size: 2.6rem;
+        padding: 20px 10px;
+        text-align: center;
+        text-decoration: underline;
+        color: white;
+        margin: 32px 10px 28px 10px;
+        font-family: 'Contrail One', cursive;
+    }
+    
+
+    #contact{
+        position: relative;
+        /* text-align: center; */
+    }
+
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 367px;
+        z-index: -1;
+        background: url(../contact2.jpg) center center/cover;
+        opacity: 4;
+    }
+
+    footer{
+        font-family: 'Contrail One', cursive;
+        text-align: center;
+        color: white;
+    }
+
+    /* form part */
+    .formgroup input, .btn2 {
+        text-align: center;
+        display: block;
+        width: 49%;
+        margin: 9px auto;
+        background-color: transparent;
+        color: white;
+        font-family: 'Carter One', cursive;
+        border-radius: 7px;
+        
+    }
+    .formgroup input:hover, .formgroup input:active{
+        background-color: white;
+        color: black;
+        transform: scale(1.3);
+    }
+    
+
+
+
+
+
+    ::placeholder {
+        color: rgb(214, 93, 93);
+    }
+
+
+
+    .btn2 {
+        font-family: 'Carter One', cursive;
+        width: 77px;
+        height: 28px;
+        color: rgb(238, 238, 238);
+        border: 2px solid grey;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+
+
+    .btn2:hover {
+        color: black;
+        background-color: white;
+        transform: scale(1.3);
+    }
